@@ -49,7 +49,19 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
                 <h2 class="hero_title">Hi, I am AYYOUBI Youness</h2>
                 
-                <p class="hero_desc">I am a Data Scientist and Web Developper Engineer</p>
+                <h3>
+                  <span class="text-slider-items">
+                    Data Scientist,
+                    Web Developper,
+                    Web Designer,
+                    Freelancer
+                    </span>
+                    <strong class="text-slider"></strong>
+                    </h3>
+			
+		
+                
+                
             </div>
             </div>
         </div>
@@ -306,10 +318,31 @@ I use the Shiny package of the R language and microsoft's power BI tool.
         </div>
     </footer>
     <script src="script/script.js"></script>
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> 
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+  <script>
+        if ($(".text-slider").length == 1) {
+             
+            var typed_strings =
+                $(".text-slider-items").text();
+ 
+            var typed = new Typed(".text-slider", {
+                strings: typed_strings.split(","),
+                typeSpeed: 50,
+                typeSpeed: 50,
+                loop: true,
+                backDelay: 900,
+                backSpeed: 30,
+                
+            });
+        }
+    </script>
   
    
 </body>
 
 </html>
 
-<!-- footer-->
+
